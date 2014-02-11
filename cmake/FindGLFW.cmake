@@ -2,9 +2,9 @@
 # This module defines
 #  GLFW_LIBRARY, the name of the library to link against
 #  GLFW_FOUND
-#  GLFW_INCLUDE_DIR, where to find GLM.h
+#  GLFW_INCLUDE_DIR, where to find GL/glfw.h
 # To Adding search path, set GLFW_ROOT_DIR as follows
-#    set(GLFW_ROOT_DIR "path/to/soil")
+#    set(GLFW_ROOT_DIR "path/to/glfw")
 # or launch cmake with -DGLFW_ROOT_DIR="/path/to/GLFW_ROOT_DIR"
 #
 # author: Kazunori Kimura
