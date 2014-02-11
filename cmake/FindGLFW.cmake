@@ -1,4 +1,4 @@
-# - Locate GLM library
+# - Locate GLFW library
 # This module defines
 #  GLFW_LIBRARY, the name of the library to link against
 #  GLFW_FOUND
