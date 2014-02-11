@@ -21,7 +21,6 @@ else()
   string(REGEX REPLACE "(.*)/glm" "\\1" GLM_INCLUDE_DIR ${GLM_INCLUDE_DIR_TMP})
 endif()
 
-message("-- GLM include directory " ${GLM_INCLUDE_DIR})
 include(FindPackageHandleStandardArgs)
 FIND_PACKAGE_HANDLE_STANDARD_ARGS(GLM
   REQUIRED_VARS GLM_INCLUDE_DIR)

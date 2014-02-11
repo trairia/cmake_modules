@@ -9,10 +9,10 @@
 #
 # author: Kazunori Kimura
 # email : kazunori.abu@gmail.com
- 
+
 find_path(SOIL_INCLUDE_DIR_TMP SOIL.h
   HINTS ${SOIL_ROOT_DIR}
-  PATH_SUFFIXES include/SOIL include
+  PATH_SUFFIXES include/SOIL SOIL include
   )
 
 if(${SOIL_INCLUDE_DIR_TMP} STREQUAL "SOIL_INCLUDE_DIR_TMP-NOTFOUND")
@@ -30,7 +30,9 @@ find_library(SOIL_LIBRARY
   )
 
 message("-- SOIL Library  " ${SOIL_LIBRARY})
-
+unset(INCLUDE_SEARCH_PATH)
+unset(LIB_SEARCH_PATH)
+unset(SOIL_INCLUDE_DIR_TMP)
 include(FindPackageHandleStandardArgs)
 FIND_PACKAGE_HANDLE_STANDARD_ARGS(SOIL
                                   REQUIRED_VARS SOIL_LIBRARY SOIL_INCLUDE_DIR)
