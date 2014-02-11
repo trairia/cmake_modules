@@ -4,7 +4,7 @@
 #  GLM_FOUND
 #  GLM_INCLUDE_DIR, where to find GLM.h
 # To Adding search path, set GLM_ROOT_DIR as follows
-#    set(GLM_ROOT_DIR "path/to/soil")
+#    set(GLM_ROOT_DIR "path/to/glm")
 # or launch cmake with -DGLM_ROOT_DIR="/path/to/GLM_ROOT_DIR"
 #
 # author: Kazunori Kimura
